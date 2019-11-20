@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31BD876721239CF933AA5626 /* Pods_SpendCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6FBB592CE714B30DC15649 /* Pods_SpendCheck.framework */; };
+		C153E4182385196F00E8F9D1 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153E4172385196F00E8F9D1 /* Check.swift */; };
+		C153E41A23851A0F00E8F9D1 /* CheckItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153E41923851A0F00E8F9D1 /* CheckItem.swift */; };
 		C1CD0F2A223A54650057F547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD0F29223A54650057F547 /* AppDelegate.swift */; };
-		C1CD0F2C223A54650057F547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD0F2B223A54650057F547 /* ViewController.swift */; };
+		C1CD0F2C223A54650057F547 /* CheckListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD0F2B223A54650057F547 /* CheckListVC.swift */; };
 		C1CD0F2F223A54650057F547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD0F2D223A54650057F547 /* Main.storyboard */; };
 		C1CD0F31223A546A0057F547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1CD0F30223A546A0057F547 /* Assets.xcassets */; };
 		C1CD0F34223A546A0057F547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD0F32223A546A0057F547 /* LaunchScreen.storyboard */; };
+		C1CD0F41223A6C340057F547 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1CD0F3F223A6C340057F547 /* SWRevealViewController.m */; };
+		C1CD0F43223A71710057F547 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD0F42223A71710057F547 /* ScanVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EBE7DAFB7A949410B3D0270 /* Pods-SpendCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpendCheck/Pods-SpendCheck.debug.xcconfig"; sourceTree = "<group>"; };
+		9F6FBB592CE714B30DC15649 /* Pods_SpendCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpendCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B669CF7EC9BA9623A57CA06D /* Pods-SpendCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpendCheck/Pods-SpendCheck.release.xcconfig"; sourceTree = "<group>"; };
+		C153E4172385196F00E8F9D1 /* Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
+		C153E41923851A0F00E8F9D1 /* CheckItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckItem.swift; sourceTree = "<group>"; };
 		C1CD0F26223A54650057F547 /* SpendCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1CD0F29223A54650057F547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1CD0F2B223A54650057F547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1CD0F2B223A54650057F547 /* CheckListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListVC.swift; sourceTree = "<group>"; };
 		C1CD0F2E223A54650057F547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1CD0F30223A546A0057F547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1CD0F33223A546A0057F547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1CD0F35223A546A0057F547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1CD0F3E223A6C330057F547 /* SpendCheck-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpendCheck-Bridging-Header.h"; sourceTree = "<group>"; };
+		C1CD0F3F223A6C340057F547 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C1CD0F40223A6C340057F547 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C1CD0F42223A71710057F547 /* ScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31BD876721239CF933AA5626 /* Pods_SpendCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04D21C7EC51F8FDCBE3B5306 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F6FBB592CE714B30DC15649 /* Pods_SpendCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8453A53DAF113DB06F538F46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE7DAFB7A949410B3D0270 /* Pods-SpendCheck.debug.xcconfig */,
+				B669CF7EC9BA9623A57CA06D /* Pods-SpendCheck.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C153E4152385160F00E8F9D1 /* CheckList */ = {
+			isa = PBXGroup;
+			children = (
+				C1CD0F2B223A54650057F547 /* CheckListVC.swift */,
+			);
+			path = CheckList;
+			sourceTree = "<group>";
+		};
+		C153E4162385195100E8F9D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C153E4172385196F00E8F9D1 /* Check.swift */,
+				C153E41923851A0F00E8F9D1 /* CheckItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C1CD0F1D223A54650057F547 = {
 			isa = PBXGroup;
 			children = (
 				C1CD0F28223A54650057F547 /* SpendCheck */,
 				C1CD0F27223A54650057F547 /* Products */,
+				8453A53DAF113DB06F538F46 /* Pods */,
+				04D21C7EC51F8FDCBE3B5306 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +105,27 @@
 		C1CD0F28223A54650057F547 /* SpendCheck */ = {
 			isa = PBXGroup;
 			children = (
-				C1CD0F29223A54650057F547 /* AppDelegate.swift */,
-				C1CD0F2B223A54650057F547 /* ViewController.swift */,
+				C153E4162385195100E8F9D1 /* Models */,
+				C1CD0F3D223A6BF10057F547 /* SWRevealViewController */,
+				C153E4152385160F00E8F9D1 /* CheckList */,
 				C1CD0F2D223A54650057F547 /* Main.storyboard */,
+				C1CD0F29223A54650057F547 /* AppDelegate.swift */,
+				C1CD0F42223A71710057F547 /* ScanVC.swift */,
 				C1CD0F30223A546A0057F547 /* Assets.xcassets */,
 				C1CD0F32223A546A0057F547 /* LaunchScreen.storyboard */,
 				C1CD0F35223A546A0057F547 /* Info.plist */,
 			);
 			path = SpendCheck;
+			sourceTree = "<group>";
+		};
+		C1CD0F3D223A6BF10057F547 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1CD0F40223A6C340057F547 /* SWRevealViewController.h */,
+				C1CD0F3F223A6C340057F547 /* SWRevealViewController.m */,
+				C1CD0F3E223A6C330057F547 /* SpendCheck-Bridging-Header.h */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1CD0F38223A546A0057F547 /* Build configuration list for PBXNativeTarget "SpendCheck" */;
 			buildPhases = (
+				6288CF90897A29C0C5AF5A17 /* [CP] Check Pods Manifest.lock */,
 				C1CD0F22223A54650057F547 /* Sources */,
 				C1CD0F23223A54650057F547 /* Frameworks */,
 				C1CD0F24223A54650057F547 /* Resources */,
+				C18F379E9D3D252227892DF3 /* [CP] Embed Pods Frameworks */,
+				29E3645C1728AEE87AA82F3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +163,7 @@
 				TargetAttributes = {
 					C1CD0F25223A54650057F547 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,13 +198,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29E3645C1728AEE87AA82F3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpendCheck/Pods-SpendCheck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6288CF90897A29C0C5AF5A17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpendCheck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C18F379E9D3D252227892DF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpendCheck/Pods-SpendCheck-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpendCheck/Pods-SpendCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1CD0F22223A54650057F547 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1CD0F2C223A54650057F547 /* ViewController.swift in Sources */,
+				C153E4182385196F00E8F9D1 /* Check.swift in Sources */,
+				C153E41A23851A0F00E8F9D1 /* CheckItem.swift in Sources */,
+				C1CD0F2C223A54650057F547 /* CheckListVC.swift in Sources */,
+				C1CD0F43223A71710057F547 /* ScanVC.swift in Sources */,
 				C1CD0F2A223A54650057F547 /* AppDelegate.swift in Sources */,
+				C1CD0F41223A6C340057F547 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,37 +436,46 @@
 		};
 		C1CD0F39223A546A0057F547 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EBE7DAFB7A949410B3D0270 /* Pods-SpendCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV8EDW43XJ;
 				INFOPLIST_FILE = SpendCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-11.SpendCheck";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpendCheck/SWRevealViewController/SpendCheck-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C1CD0F3A223A546A0057F547 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B669CF7EC9BA9623A57CA06D /* Pods-SpendCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV8EDW43XJ;
 				INFOPLIST_FILE = SpendCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-11.SpendCheck";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpendCheck/SWRevealViewController/SpendCheck-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
