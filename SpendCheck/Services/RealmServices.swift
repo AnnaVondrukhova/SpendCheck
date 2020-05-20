@@ -26,7 +26,7 @@ class RealmServices {
     
    static func addCheck(check: Check) -> Observable<Check> {
         let result = withRealm("adding check") { realm -> Observable<Check> in
-            let check = Check()
+            print("adding check")
             realm.beginWrite()
             realm.add(check, update: .modified)
             try realm.commitWrite()

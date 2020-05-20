@@ -10,23 +10,21 @@ import Foundation
 import RealmSwift
 
 class Check: Object {
-    dynamic var uid: String = ""
-    dynamic var error: String?
-    dynamic var qrString = ""
-    dynamic var jsonString: String?
+    @objc dynamic var qrString = ""
+    @objc dynamic var error: String?
+    @objc dynamic var jsonString: String?
     var checkItems = List<CheckItem>()
-    dynamic var checkDate: Date?
-    dynamic var mDate: Date?
+    @objc dynamic var checkDate: Date?
+    @objc dynamic var mDate: Date?
     
     override static func primaryKey() -> String? {
-        return "uid"
+        return "qrString"
     }
     
     convenience init(error: String?, qrString: String, jsonString: String?) {
         self.init()
         
         self.error = error
-        self.uid = UserDefaults.standard.string(forKey: "user")! + qrString
         self.qrString = qrString
         self.jsonString = jsonString
         self.mDate = Date()

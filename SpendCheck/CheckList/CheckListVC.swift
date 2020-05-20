@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RealmSwift
+import RxRealm
 
 class CheckListVC: UIViewController {
 
@@ -19,6 +21,8 @@ class CheckListVC: UIViewController {
             sideMenuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
 
 

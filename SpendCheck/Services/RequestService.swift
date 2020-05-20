@@ -13,21 +13,27 @@ import SwiftyJSON
 
 class RequestService {
     
-    //проверяем существование чека
+    static func getParams(receivedString: String) -> [String:String] {
+        let params = receivedString
+        .components(separatedBy: "&")
+        .map { $0.components(separatedBy: "=") }
+        .reduce([String: String]()) { result, param in
+            var dict = result
+            let key = param[0]
+            let value = param[1]
+            dict[key] = value
+            return dict
+        }
+        return params
+    }
+    
+    //MARK: проверяем существование чека
     static func checkExist(receivedString: String) {
         print ("existence check begin")
         
+        
         //разбираем полученную строку на словарь с параметрами
-        var params = receivedString
-            .components(separatedBy: "&")
-            .map { $0.components(separatedBy: "=") }
-            .reduce([String: String]()) { result, param in
-                var dict = result
-                let key = param[0]
-                let value = param[1]
-                dict[key] = value
-                return dict
-        }
+        var params = getParams(receivedString: receivedString)
         print ("params loaded")
         
         let dateFormatter = DateFormatter()
@@ -51,7 +57,7 @@ class RequestService {
         
         print(String(describing: params))
 //
-//        let url = URL(string: "https://proverkacheka.nalog.ru:9999/v1/ofds/*/inns/*/fss/9285000100026395/operations/1/tickets/19229?fiscalSign=1477567723&date=2019-01-07T18:10:00&sum=237463")
+//        let url = URL(string: "https://proverkacheka.nalog.ru:9999/v1/ofds/*/inns/*/fss/9289000100346765/operations/1/tickets/97660?fiscalSign=4179925410&date=2020-05-18T15:52:00&sum=53182")
         let url = URL(string: "https://proverkacheka.nalog.ru:9999/v1/ofds/*/inns/*/fss/\(params["fn"]!)/operations/\(params["n"]!)/tickets/\(params["i"]!)?fiscalSign=\(params["fp"]!)&date=\(params["t"]!)&sum=\(params["s"]!)")
         
         print(String(describing: url))
@@ -97,28 +103,22 @@ class RequestService {
         task.resume()
     }
     
-    //загружаем данные с сайта ФНС
+    //MARK: загружаем данные с сайта ФНС
     static func loadData(receivedString: String){
         print("loadData func begin")
         
-        let user = UserDefaults.standard.string(forKey: "user")
-        let password = UserDefaults.standard.string(forKey: "password")
-        let loginData = String(format: "%@:%@", user!, password!).data(using: String.Encoding.utf8)!
+//        let user = UserDefaults.standard.string(forKey: "user")
+//        let password = UserDefaults.standard.string(forKey: "password")
+        let user = "+79031827753"
+        let password = "309179"
+        let loginData = String(format: "%@:%@", user, password).data(using: String.Encoding.utf8)!
         let base64LoginData = loginData.base64EncodedString()
         
         //разбираем полученную строку на словарь с параметрами
-        let params = receivedString
-            .components(separatedBy: "&")
-            .map { $0.components(separatedBy: "=") }
-            .reduce([String: String]()) { result, param in
-                var dict = result
-                let key = param[0]
-                let value = param[1]
-                dict[key] = value
-                return dict
-        }
+        let params = getParams(receivedString: receivedString)
         print ("params loaded")
-        
+
+//        let url = URL(string: "https://proverkacheka.nalog.ru:9999/v1/ofds/*/inns/*/fss/9289000100346765/operations/1/tickets/97660?fiscalSign=4179925410&date=2020-05-18T15:52:00&sum=53182")
         let url = URL(string: "https://proverkacheka.nalog.ru:9999/v1/inns/*/kkts/*/fss/\(params["fn"]!)/tickets/\(params["i"]!)?fiscalSign=\(params["fp"]!)&sendToEmail=no")
         
         var request = URLRequest(url: url!)
@@ -142,6 +142,7 @@ class RequestService {
                 if statusCode == 200 {
                     let json = JSON(data!)
                     if json.rawString() != "null" {
+                        print(json)
                         let check = Check(error: nil, qrString: receivedString, jsonString: json.rawString())
                         let checkItems = json["document"]["receipt"]["items"].compactMap {CheckItem(json: $0.1)}
                         check.addCheckItems(checkItems)
