@@ -17,6 +17,7 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
     var captureDevice: AVCaptureDevice?
+    let requestService = RequestService()
     
     var qrString = "t=20200518T155200&s=531.82&fn=9289000100346765&i=97660&fp=4179925410&n=1"
     

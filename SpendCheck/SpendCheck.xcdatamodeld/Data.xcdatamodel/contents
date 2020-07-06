@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Check" representedClassName="Check" syncable="YES" codeGenerationType="category">
+        <attribute name="checkDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="error" optional="YES" attributeType="String"/>
+        <attribute name="jsonString" optional="YES" attributeType="String"/>
+        <attribute name="mDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="qrString" optional="YES" attributeType="String"/>
+        <relationship name="checkItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CheckItem" inverseName="check" inverseEntity="CheckItem"/>
+    </entity>
+    <entity name="CheckItem" representedClassName="CheckItem" syncable="YES" codeGenerationType="category">
+        <attribute name="categoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sum" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="check" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Check" inverseName="checkItems" inverseEntity="Check"/>
+    </entity>
+    <elements>
+        <element name="CheckItem" positionX="102.6328125" positionY="-8.7109375" width="128" height="148"/>
+        <element name="Check" positionX="-228.26171875" positionY="9.50390625" width="128" height="133"/>
+    </elements>
+</model>
