@@ -111,8 +111,11 @@ class RequestService {
                             let decoder = JSONDecoder()
                             let check = try decoder.decode(JSONCheck.self, from: data)
                             print(check.document.receipt.items.first?.name)
+                            let shop = check.document.receipt.user ?? ""
+                            let sum = Double(check.document.receipt.totalSum)/100
+                            let items = check.document.receipt.items
                             DispatchQueue.main.async {
-                                SaveService.saveCheck(error: nil, qrString: receivedString, jsonString: jsonString, items: check.document.receipt.items)
+                                SaveService.saveCheck(error: nil, qrString: receivedString, jsonString: jsonString, shop: shop, sum: sum, items: items)
                             }
                         } catch let error {
                             print("Json decoding error: ", error)
@@ -129,6 +132,7 @@ class RequestService {
 //                        check.addCheckItems(checkItems)
 //                        print ("case success")
 //                    }
+                        
                 //если json пустой, записываем строку в базу с jsonString = nil и error != nil
                     else {
                         DispatchQueue.main.async {
@@ -150,7 +154,7 @@ class RequestService {
             else {
                 
                 DispatchQueue.main.async {
-                    SaveService.saveCheck(error: "\(001)", qrString: receivedString, jsonString: nil, items: [])
+                    SaveService.saveCheck(error: "000", qrString: receivedString, jsonString: nil, items: [])
                 }
                     
                 if error!._code == NSURLErrorTimedOut {

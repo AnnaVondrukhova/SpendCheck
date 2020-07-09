@@ -12,7 +12,7 @@ import CoreData
 
 @objc(Check)
 public class Check: NSManagedObject {
-    func configure(error: String?, qrString: String, jsonString: String?) {
+    func configure(error: String?, qrString: String, jsonString: String?, shop: String = "", sum: Double = 0) {
         
         self.error = error
         self.qrString = qrString
@@ -22,6 +22,9 @@ public class Check: NSManagedObject {
         
         self.checkDate = SupportingFuncs.getCheckDate(qrString: self.qrString!)
         print ("check date \(self.checkDate as Any)")
+        
+        self.shop = shop
+        self.sum = sum
     }
     
 }

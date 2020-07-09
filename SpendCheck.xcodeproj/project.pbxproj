@@ -15,9 +15,6 @@
 		C100F24124AE186700FC8DAA /* Check+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100F23D24AE186700FC8DAA /* Check+CoreDataClass.swift */; };
 		C100F24424AE29E100FC8DAA /* CheckJSONStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100F24324AE29E100FC8DAA /* CheckJSONStructure.swift */; };
 		C100F24624AF111600FC8DAA /* SaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100F24524AF111600FC8DAA /* SaveService.swift */; };
-		C153E4182385196F00E8F9D1 /* Check1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153E4172385196F00E8F9D1 /* Check1.swift */; };
-		C153E41A23851A0F00E8F9D1 /* CheckItem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153E41923851A0F00E8F9D1 /* CheckItem1.swift */; };
-		C153E41F23880C8700E8F9D1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153E41E23880C8700E8F9D1 /* Errors.swift */; };
 		C153E421238FFA8D00E8F9D1 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153E420238FFA8D00E8F9D1 /* RequestService.swift */; };
 		C1CD0F2A223A54650057F547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD0F29223A54650057F547 /* AppDelegate.swift */; };
 		C1CD0F2C223A54650057F547 /* CheckListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD0F2B223A54650057F547 /* CheckListVC.swift */; };
@@ -26,6 +23,9 @@
 		C1CD0F34223A546A0057F547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD0F32223A546A0057F547 /* LaunchScreen.storyboard */; };
 		C1CD0F41223A6C340057F547 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1CD0F3F223A6C340057F547 /* SWRevealViewController.m */; };
 		C1CD0F43223A71710057F547 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD0F42223A71710057F547 /* ScanVC.swift */; };
+		C1CDDAF224B35EA9003789FE /* CheckCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CDDAF124B35EA9003789FE /* CheckCell.xib */; };
+		C1CDDAF424B35ED0003789FE /* CheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CDDAF324B35ED0003789FE /* CheckCell.swift */; };
+		C1CDDAF824B4BD19003789FE /* CheckItemsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CDDAF724B4BD19003789FE /* CheckItemsTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +39,6 @@
 		C100F23D24AE186700FC8DAA /* Check+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Check+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C100F24324AE29E100FC8DAA /* CheckJSONStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckJSONStructure.swift; sourceTree = "<group>"; };
 		C100F24524AF111600FC8DAA /* SaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveService.swift; sourceTree = "<group>"; };
-		C153E4172385196F00E8F9D1 /* Check1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check1.swift; sourceTree = "<group>"; };
-		C153E41923851A0F00E8F9D1 /* CheckItem1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckItem1.swift; sourceTree = "<group>"; };
-		C153E41E23880C8700E8F9D1 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		C153E420238FFA8D00E8F9D1 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		C1CD0F26223A54650057F547 /* SpendCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1CD0F29223A54650057F547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +51,9 @@
 		C1CD0F3F223A6C340057F547 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		C1CD0F40223A6C340057F547 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		C1CD0F42223A71710057F547 /* ScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
+		C1CDDAF124B35EA9003789FE /* CheckCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckCell.xib; sourceTree = "<group>"; };
+		C1CDDAF324B35ED0003789FE /* CheckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCell.swift; sourceTree = "<group>"; };
+		C1CDDAF724B4BD19003789FE /* CheckItemsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckItemsTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,25 +93,13 @@
 			path = "Supporting functions";
 			sourceTree = "<group>";
 		};
-		C153E4152385160F00E8F9D1 /* CheckList */ = {
+		C153E4162385195100E8F9D1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C1CD0F2B223A54650057F547 /* CheckListVC.swift */,
-			);
-			path = CheckList;
-			sourceTree = "<group>";
-		};
-		C153E4162385195100E8F9D1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C100F23B24AE186700FC8DAA /* CheckItem+CoreDataClass.swift */,
 				C100F23D24AE186700FC8DAA /* Check+CoreDataClass.swift */,
-				C153E4172385196F00E8F9D1 /* Check1.swift */,
-				C153E41923851A0F00E8F9D1 /* CheckItem1.swift */,
-				C153E41E23880C8700E8F9D1 /* Errors.swift */,
 				C100F24324AE29E100FC8DAA /* CheckJSONStructure.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C153E41B2387F9A400E8F9D1 /* Services */ = {
@@ -144,15 +132,15 @@
 		C1CD0F28223A54650057F547 /* SpendCheck */ = {
 			isa = PBXGroup;
 			children = (
-				C100F21824ADC6EF00FC8DAA /* Supporting functions */,
 				C1CD0F3D223A6BF10057F547 /* SWRevealViewController */,
-				C153E4162385195100E8F9D1 /* Models */,
-				C153E4152385160F00E8F9D1 /* CheckList */,
+				C1CDDAE924B35D6F003789FE /* CheckListViewController */,
+				C1CDDAEE24B35E42003789FE /* CheckItemsViewController */,
+				C1CDDAED24B35E01003789FE /* ScanViewController */,
+				C100F21824ADC6EF00FC8DAA /* Supporting functions */,
 				C153E41B2387F9A400E8F9D1 /* Services */,
 				C1CD0F2D223A54650057F547 /* Main.storyboard */,
 				C1CD0F29223A54650057F547 /* AppDelegate.swift */,
 				C100F21324ADC4C000FC8DAA /* SceneDelegate.swift */,
-				C1CD0F42223A71710057F547 /* ScanVC.swift */,
 				C1CD0F30223A546A0057F547 /* Assets.xcassets */,
 				C1CD0F32223A546A0057F547 /* LaunchScreen.storyboard */,
 				C100F21524ADC58E00FC8DAA /* SpendCheck.xcdatamodeld */,
@@ -169,6 +157,74 @@
 				C1CD0F3E223A6C330057F547 /* SpendCheck-Bridging-Header.h */,
 			);
 			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		C1CDDAE924B35D6F003789FE /* CheckListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C153E4162385195100E8F9D1 /* Model */,
+				C1CDDAF024B35E78003789FE /* View */,
+				C1CDDAEB24B35DCC003789FE /* Controller */,
+			);
+			path = CheckListViewController;
+			sourceTree = "<group>";
+		};
+		C1CDDAEB24B35DCC003789FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1CD0F2B223A54650057F547 /* CheckListVC.swift */,
+				C1CDDAF324B35ED0003789FE /* CheckCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1CDDAED24B35E01003789FE /* ScanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1CD0F42223A71710057F547 /* ScanVC.swift */,
+			);
+			path = ScanViewController;
+			sourceTree = "<group>";
+		};
+		C1CDDAEE24B35E42003789FE /* CheckItemsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1CDDAEF24B35E59003789FE /* Model */,
+				C1CDDAF624B4BCCF003789FE /* View */,
+				C1CDDAF524B4BCC6003789FE /* Controller */,
+			);
+			path = CheckItemsViewController;
+			sourceTree = "<group>";
+		};
+		C1CDDAEF24B35E59003789FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C100F23B24AE186700FC8DAA /* CheckItem+CoreDataClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1CDDAF024B35E78003789FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1CDDAF124B35EA9003789FE /* CheckCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1CDDAF524B4BCC6003789FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1CDDAF724B4BD19003789FE /* CheckItemsTableVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1CDDAF624B4BCCF003789FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CDDAF224B35EA9003789FE /* CheckCell.xib in Resources */,
 				C1CD0F34223A546A0057F547 /* LaunchScreen.storyboard in Resources */,
 				C1CD0F31223A546A0057F547 /* Assets.xcassets in Resources */,
 				C1CD0F2F223A54650057F547 /* Main.storyboard in Resources */,
@@ -332,19 +389,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C153E4182385196F00E8F9D1 /* Check1.swift in Sources */,
 				C153E421238FFA8D00E8F9D1 /* RequestService.swift in Sources */,
-				C153E41A23851A0F00E8F9D1 /* CheckItem1.swift in Sources */,
 				C1CD0F2C223A54650057F547 /* CheckListVC.swift in Sources */,
 				C1CD0F43223A71710057F547 /* ScanVC.swift in Sources */,
+				C1CDDAF424B35ED0003789FE /* CheckCell.swift in Sources */,
 				C100F24124AE186700FC8DAA /* Check+CoreDataClass.swift in Sources */,
 				C100F21424ADC4C000FC8DAA /* SceneDelegate.swift in Sources */,
 				C100F21724ADC58E00FC8DAA /* SpendCheck.xcdatamodeld in Sources */,
 				C100F24424AE29E100FC8DAA /* CheckJSONStructure.swift in Sources */,
-				C153E41F23880C8700E8F9D1 /* Errors.swift in Sources */,
 				C1CD0F2A223A54650057F547 /* AppDelegate.swift in Sources */,
 				C100F23F24AE186700FC8DAA /* CheckItem+CoreDataClass.swift in Sources */,
 				C100F24624AF111600FC8DAA /* SaveService.swift in Sources */,
+				C1CDDAF824B4BD19003789FE /* CheckItemsTableVC.swift in Sources */,
 				C1CD0F41223A6C340057F547 /* SWRevealViewController.m in Sources */,
 				C100F21A24ADC72000FC8DAA /* SupportingFuncs.swift in Sources */,
 			);
